@@ -1,0 +1,56 @@
+body{
+    background-color:#9FB1BC;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #9FB1BC;
+   color: white;
+   text-align: right;
+}
+.footer h3{
+    color:red;
+}
+form div{
+    margin-bottom:15px; //Αφήνω κενό από κάτω
+}
+form div label,
+form div input{
+    width:100%; // Κάνω τα πεδία μεγάλα
+    color:black; //γράμματα πάνω κουμπί σύνδεση ή εγγραφή
+    display:block;
+}
+form div label{
+    text-transform:uppercase; //Κάνω τα πάντα κεφαλαία
+    color:black; // Τα labels AMKA, e-mail κτλ
+}
+form div input{
+    font-size:25px;
+    border:none;
+    padding:15px 20px;
+    border-radius:25px; // Κάνω στρογγυλά τα πεδία
+    background:rgba(211,208,203,.1); // πεδία που εισάγει ο χρήστης στοιχεία
+
+}
+.upper-button{
+    background-color:#2E5266;
+    color: #D3D0CB;
+}
+.upper-button:hover{
+    background-color:#6E8898;
+    color: #D9B48F;
+}
+.big-button{
+    background-color:#D9B48F;
+    font-size:25px;
+    border:none;
+    padding:15px 20px;
+    border-radius:25px; // Κάνω στρογγυλά τα πεδία
+    background:rgba(211,208,203,.1); // πεδία που εισάγει ο χρήστης στοιχεία
+    width:100%; // Κάνω τα πεδία μεγάλα
+    color:black; //γράμματα πάνω κουμπί σύνδεση ή εγγραφή
+    display:block;
+    text-transform:uppercase; //Κάνω τα πάντα κεφαλαία
+}

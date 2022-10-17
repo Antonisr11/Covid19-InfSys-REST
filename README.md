@@ -1,4 +1,4 @@
-## General
+## Covid19-InfSys-REST
 
 This is an Information System based on REST (SOA) for both for citizens willing to be vaccinated and for vaccinators.
 
@@ -47,3 +47,63 @@ Click Configure in "Frameworks detected" window, and then click OK. Then click L
 11. Download mysql-connector (https://dev.mysql.com/downloads/connector/j/5.1.html)
 12. Back in InteliJ, run Project and it should appear a file lib in location Project/target/Project-1.0-SNAPSHOT/WEB-INF/lib. Paste here "mysql-connector-java-8.0.28.jar" from previous step
 13. Open "http://localhost:8080/Project_war_exploded/login/login.jsp" from any browser
+
+## General
+
+This information system requires login from user to continue (user can create account if they haven't). 
+
+User must provide full name, password, email and ΑΜΚΑ (ΑΜΚΑ is a unique number for each person).
+
+![image](https://user-images.githubusercontent.com/76475823/196152558-095e6bc0-1bcf-43ed-baf5-5010f60ccd38.png)
+
+### Simple User
+
+If user is not admin they are able to:
+
+1. See their appointments
+
+![image](https://user-images.githubusercontent.com/76475823/196152432-8508efea-fdc6-4747-b0d5-fa6e9a8bebc6.png)
+
+2. Change their personal info
+
+Change ΑΜΚΑ is prohibited so this field is disabled.
+
+![image](https://user-images.githubusercontent.com/76475823/196153379-a64518f4-fa14-43de-ac9c-253fe2290a1c.png)
+
+3. Cancel all their appointments
+
+![image](https://user-images.githubusercontent.com/76475823/196153749-d451e071-122b-4af3-931f-11a4cb7bfca1.png)
+
+4. Book appointment 
+
+![image](https://user-images.githubusercontent.com/76475823/196173057-57553267-66c9-41ef-aa02-44030526f2d0.png)
+
+### Admin User
+
+If user is admin they are able to:
+
+1. See all apppointments
+
+![image](https://user-images.githubusercontent.com/76475823/196175175-4a498191-aec1-4e1b-8eba-7d02f72969c6.png)
+
+User can see what appointments are booked for a certain date. Then they can delete them or mark them as completed (all or each one individually) 
+
+![image](https://user-images.githubusercontent.com/76475823/196175501-a886f4ce-a648-4243-9cd7-59e266a2a987.png)
+
+2. Change options on system
+
+Admin users can set the lowerest age limit to book appointment, maximum vaccines per person and the minimum number of days that have to pass between two appointments.
+
+![image](https://user-images.githubusercontent.com/76475823/196177205-e6ba7ea5-dcd3-49f4-9afc-25b23d0dcd55.png)
+
+3. Add available vaccines in certain date
+
+![image](https://user-images.githubusercontent.com/76475823/196177415-fb30101c-bb00-40be-9b50-d23bcef38174.png)
+
+4. Show all users info
+
+![image](https://user-images.githubusercontent.com/76475823/196177471-5e969bf4-f3f6-4d2e-b2d0-1c6b58275382.png)
+
+5. Register another admin user
+
+![image](https://user-images.githubusercontent.com/76475823/196177567-9052e3f1-ff18-4259-a57a-a516ad38cd29.png)
